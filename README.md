@@ -68,3 +68,11 @@ _ _ _
 
 
 > 转载引用，请注明出处，至少给个star吧！
+
+graph TD
+
+A(java.lang.Object) -->B(java.lang.Reference)
+    A -->D(java.lang.ref.ReferenceQueue)
+    B --> C(java.lang.ref.SoftReference)
+    B --> E(java.lang.ref.WeakReference)
+    B --> F(java.lang.ref.PhantomReference)
